@@ -1,4 +1,4 @@
-import {directory} from "../assets/dynamic";
+import {directory} from "../../assets/dynamic";
 
 export const handleCdCommand = (args: string[], currentDirectory: Record<string, any>): string => {
 	let response = "";

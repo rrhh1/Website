@@ -1,4 +1,4 @@
-import {command_info, commands} from "../assets/constants";
+import {command_info, commands} from "../../assets/commands";
 
 export const handleHelpCommand = (args: string[]): any => {
 	let response = "";
@@ -24,7 +24,6 @@ export const handleHelpCommand = (args: string[]): any => {
 
 	const help_command = args[0];
 	response =
-		`Help for command '${help_command}':\n` +
 		command_info[help_command].description +
 		"\n" +
 		"Usage: " +

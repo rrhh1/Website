@@ -7,7 +7,9 @@ export const handleLsCommand = (args: string[], currentDirectory: Record<string,
 		const directories = Object.keys(currentDirectory["directories"] as Record<string, any>).map(
 			(directoryName) => directoryName + "/"
 		);
-		const files = currentDirectory["files"] as string[];
+		const files: string[] = currentDirectory["files"].map(
+			(file: Record<string, any>) => file.name
+		);
 
 		response = directories.concat(files).join("    "); // 4 spaces
 	}

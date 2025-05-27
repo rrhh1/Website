@@ -1,4 +1,6 @@
-import {chatHistory} from "../assets/dynamic";
+import {chatHistory} from "../../assets/dynamic";
+import {introState} from "../../sharedStates/intro.svelte";
+import {handleCatCommand} from "./cat_controller";
 import {handleCdCommand} from "./cd_controller";
 import {handleClearCommand} from "./clear_controller";
 import {handleHelpCommand} from "./help_controller";
@@ -17,19 +19,27 @@ export const handleCommand = (prompt: string, currentDirectory: Record<string, a
 			response = handleCdCommand(args, currentDirectory);
 			break;
 
-		case "ls":
-			response = handleLsCommand(args, currentDirectory);
-			console.log(response);
+		case "cat":
+			response = handleCatCommand(args, currentDirectory);
 			break;
 
 		case "clear":
 			response = handleClearCommand();
+			chatHistory.set([]); // Clear the chat history
+			introState().resetText(); // Reset the intro text
+
+			break;
+
+		case "ls":
+			response = handleLsCommand(args, currentDirectory);
+			break;
+
+		case "replay":
+			introState().loadText();
 			break;
 	}
 
-	if (response === undefined) {
-		chatHistory.set([]);
-	} else {
+	if (response !== undefined) {
 		chatHistory.update((messages) => {
 			return [
 				...messages,

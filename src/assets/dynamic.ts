@@ -1,5 +1,5 @@
 import {writable} from "svelte/store";
-import {directory_info} from "./constants";
+import {directory_info} from "./directoryTree";
 
 export const chatHistory = writable<Record<string, string>[]>([]);
 

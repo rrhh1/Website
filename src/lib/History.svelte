@@ -21,12 +21,12 @@
 
 <main id="history">
 	{#each history as message}
-		<h4 style="margin-top: 0px; margin-bottom:0px;">
+		<h4 id="history-prompt">
 			&gt; user@website:~${message.path}
 			<span style="color: orange;">{message.command}</span>{" " + message.args}
 		</h4>
 		{#if message.response}
-			<h4 style="margin-top:0px; margin-bottom:0px">{message.response}</h4>
+			<h4 id="history-response">{message.response}</h4>
 			<br />
 			<br />
 		{/if}
@@ -36,5 +36,15 @@
 <style>
 	#history {
 		white-space: pre-wrap;
+	}
+
+	#history-prompt {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	#history-response {
+		margin-top: 0px;
+		margin-bottom: 0px;
 	}
 </style>
