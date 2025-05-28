@@ -37,6 +37,9 @@ export const handleCommand = (prompt: string, currentDirectory: Record<string, a
 		case "replay":
 			introState().loadText();
 			break;
+
+		default:
+			response = `The command '${command}' is not recognized. Type 'help' to view all available commands.`;
 	}
 
 	if (response !== undefined) {

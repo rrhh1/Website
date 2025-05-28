@@ -23,11 +23,10 @@
 	{#each history as message}
 		<h4 id="history-prompt">
 			&gt; user@website:~${message.path}
-			<span style="color: orange;">{message.command}</span>{" " + message.args}
+			<span id="prompt-command">{message.command}</span>{" " + message.args}
 		</h4>
 		{#if message.response}
 			<h4 id="history-response">{message.response}</h4>
-			<br />
 			<br />
 		{/if}
 	{/each}
@@ -41,6 +40,10 @@
 	#history-prompt {
 		margin-top: 0px;
 		margin-bottom: 0px;
+	}
+
+	#prompt-command {
+		color: var(--command-color);
 	}
 
 	#history-response {

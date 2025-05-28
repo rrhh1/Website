@@ -3,31 +3,17 @@ import {command_info, commands} from "../../assets/commands";
 export const handleHelpCommand = (args: string[]): any => {
 	let response = "";
 
-	if (args.length > 1) {
-		response = "Too many arguments provided. Please use 'help' or 'help <command>'.";
+	if (args.length > 0) {
+		response = "Too many arguments provided. Please use 'help'";
 		return response;
 	}
 
-	if (args.length === 0) {
-		response =
-			"Available commands: " +
-			commands.join(", ") +
-			".\nType 'help <command>' for more information.";
-
-		return response;
+	let info = [];
+	for (const [key, value] of Object.entries(command_info)) {
+		info.push(`${key}	---	Description: ${value.description}
+		Usage: ${value.usage}`);
 	}
 
-	if (!commands.includes(args[0])) {
-		response = `Unknown command: '${args[0]}'. Type 'help' for a list of available commands.`;
-		return response;
-	}
-
-	const help_command = args[0];
-	response =
-		command_info[help_command].description +
-		"\n" +
-		"Usage: " +
-		command_info[help_command].usage;
-
+	response = "Available commands: " + commands.join(", ") + ".\n\n" + info.join("\n\n");
 	return response;
 };

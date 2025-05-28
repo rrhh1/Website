@@ -10,12 +10,14 @@
 </script>
 
 <div id="Title">
-	<h2>
-		{_introState.displayedTitle}
-	</h2>
-	<h3>
-		{_introState.displayedDesc}
-	</h3>
+	{#if _introState.displayedTitle}
+		<h2>
+			{_introState.displayedTitle}
+		</h2>
+		<h4>
+			{_introState.displayedDesc}
+		</h4>
+	{/if}
 </div>
 
 <style>

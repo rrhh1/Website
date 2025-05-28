@@ -1,12 +1,13 @@
 :root {
-  --background-color: #232136;
+  --background-color: #2a273f;
   --font-color: #e0def4;
   --primary-color: #3e8fb0;
+  --command-color: #f6c177;
   
   --global-font-size: 1.0vw;
 
-  padding-top: 0;
+  padding-top: 2rem;
   padding-right: 2rem;
-  padding-bottom: 0;
+  padding-bottom: 2rem;
   padding-left: 2rem;
 }

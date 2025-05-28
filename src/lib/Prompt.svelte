@@ -99,7 +99,7 @@
 	<main>
 		<h4 id="prompt">
 			&gt; user@website:~${currentDirectory.path}
-			<span style="color: #f6c177;">{prompt[0]}</span>{#if index == 1}{" " + prompt[1]}{/if}
+			<span id="prompt-command">{prompt[0]}</span>{#if index == 1}{" " + prompt[1]}{/if}
 		</h4>
 	</main>
 {/if}
@@ -131,5 +131,9 @@
 		50% {
 			background-color: var(--primary-color);
 		}
+	}
+
+	#prompt-command {
+		color: var(--command-color);
 	}
 </style>

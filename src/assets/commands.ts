@@ -1,8 +1,8 @@
 export const commands = ["help", "cd", "ls", "cat", "clear", "replay", "run"];
 export const command_info: Record<string, Record<string, string>> = {
 	help: {
-		description: "Display a list of available commands or help for a specific command.",
-		usage: "'help' | 'help [command]'",
+		description: "Display a list of available commands.",
+		usage: "'help'",
 	},
 	cd: {
 		description: "Change the current directory.",

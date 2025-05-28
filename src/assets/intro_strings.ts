@@ -1,5 +1,4 @@
-export const TitleName = `
- ______     ______     __  __        __  __     __  __    
+export const TitleName = ` ______     ______     __  __        __  __     __  __    
 /\\  == \\   /\\  __ \\   /\\ \\_\\ \\      /\\ \\_\\ \\   /\\ \\/\\ \\   
 \\ \\  __<   \\ \\  __ \\  \\ \\____ \\     \\ \\  __ \\  \\ \\ \\_\\ \\  
  \\ \\_\\ \\_\\  \\ \\_\\ \\_\\  \\/\\_____\\     \\ \\_\\ \\_\\  \\ \\_____\\ 
@@ -12,4 +11,6 @@ export const description =
 	"Feel free to explore and reach out if you have any questions or opportunities to discuss. " +
 	"For the best experience, please view this website on a PC or laptop!" +
 	"\n\n" +
-	"To get started, type 'help' for a list of the available commands.";
+	"To get started, type 'help' for a list of the available commands." +
+	"\n" +
+	"[Tab] for autocompletion";
