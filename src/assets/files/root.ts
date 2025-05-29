@@ -29,13 +29,13 @@ const cool_features_txt = {
 const contacts_txt = {
 	name: "contacts.txt",
 	content:
-		"📧 Email: rayhu100@gmail.com" +
+		"📧 Email:	rayhu100@gmail.com" +
 		"\n" +
-		"💻 GitHub: github.com/rrhh1" +
+		"💻 GitHub:	github.com/rrhh1" +
 		"\n" +
-		"💼 LinkedIn: linkedin.com/in/ray-h-hu/" +
+		"💼 LinkedIn:	linkedin.com/in/ray-h-hu/" +
 		"\n" +
-		"☎️ Phone: +1 (510) 396-1677",
+		"☎️ Phone:	+1 (510) 396-1677",
 };
 
 // Export the root files
