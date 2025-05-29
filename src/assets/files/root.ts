@@ -31,9 +31,9 @@ const contacts_txt = {
 	content:
 		"📧 Email: rayhu100@gmail.com" +
 		"\n" +
-		"💻 GitHub: https://github.com/rrhh1" +
+		"💻 GitHub: github.com/rrhh1" +
 		"\n" +
-		"💼 LinkedIn: https://www.linkedin.com/in/ray-h-hu/" +
+		"💼 LinkedIn: linkedin.com/in/ray-h-hu/" +
 		"\n" +
 		"☎️ Phone: +1 (510) 396-1677",
 };

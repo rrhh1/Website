@@ -14,7 +14,7 @@ export const command_info: Record<string, Record<string, string>> = {
 	},
 	cat: {
 		description: "Display the contents of a file.",
-		usage: "'cat [file].txt' | 'cat [file].pdf'",
+		usage: "'cat [file].txt'",
 	},
 	clear: {
 		description: "Clear the chat history.",
