@@ -38,12 +38,5 @@ const contacts_txt = {
 		"☎️ Phone: +1 (510) 396-1677",
 };
 
-// resume.pdf
-const resume_pdf = {
-	name: "resume.pdf",
-	content:
-		"This is a placeholder for the resume PDF content. In a real application, this would be the binary data of the PDF file.",
-};
-
 // Export the root files
-export const root_files = [about_txt, cool_features_txt, contacts_txt, resume_pdf];
+export const root_files = [about_txt, cool_features_txt, contacts_txt];

@@ -1,4 +1,4 @@
-export const commands = ["help", "cd", "ls", "cat", "clear", "replay", "run"];
+export const commands = ["help", "cd", "ls", "cat", "clear", "echo", "replay"];
 export const command_info: Record<string, Record<string, string>> = {
 	help: {
 		description: "Display a list of available commands.",
@@ -20,14 +20,12 @@ export const command_info: Record<string, Record<string, string>> = {
 		description: "Clear the chat history.",
 		usage: "'clear'",
 	},
-
+	echo: {
+		description: "Display a line of text.",
+		usage: "'echo [text]'",
+	},
 	replay: {
 		description: "Replay the introduction animation.",
 		usage: "'replay'",
-	},
-
-	run: {
-		description: "Run a specific command or script.",
-		usage: "'run [script].exe'",
 	},
 };

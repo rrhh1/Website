@@ -1,6 +1,7 @@
 import {root_files} from "./files/root";
 import {experience_files} from "./files/experience";
 import {project_files} from "./files/projects";
+import {skill_files} from "./files/skills";
 import TrieTree from "./autocomplete";
 
 // Define the root object first so it can be referenced
@@ -30,7 +31,7 @@ const projectsObj = {
 
 const skillsObj = {
 	path: "/skills",
-	files: root_files,
+	files: skill_files,
 	directories: {},
 	parent: rootObj,
 	trie: null,

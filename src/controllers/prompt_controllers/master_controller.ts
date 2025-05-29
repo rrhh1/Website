@@ -3,6 +3,7 @@ import {introState} from "../../sharedStates/intro.svelte";
 import {handleCatCommand} from "./cat_controller";
 import {handleCdCommand} from "./cd_controller";
 import {handleClearCommand} from "./clear_controller";
+import {handleEchoCommand} from "./echo_controller";
 import {handleHelpCommand} from "./help_controller";
 import {handleLsCommand} from "./ls_controller";
 
@@ -32,6 +33,10 @@ export const handleCommand = (prompt: string, currentDirectory: Record<string, a
 
 		case "ls":
 			response = handleLsCommand(args, currentDirectory);
+			break;
+
+		case "echo":
+			response = handleEchoCommand(args);
 			break;
 
 		case "replay":

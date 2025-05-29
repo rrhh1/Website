@@ -42,6 +42,7 @@ const custom_gpt_txt = {
 		"- Linked with a MongoDB database to store and access large models to ensure cross-device compatibility.",
 };
 
+// Discord Clip
 const discord_clip_txt = {
 	name: "discord_clip.txt",
 	content:
@@ -85,6 +86,7 @@ const fusion_foods_txt = {
 		"- Utilized SvelteKit, TailwindCSS, and SkeletonUI to build the website for dynmaic visuals, including a custom loading screen.",
 };
 
+// Menhara Productivity
 const menhara_productivity_txt = {
 	name: "menhara_productivity.txt",
 	content:
@@ -107,6 +109,7 @@ const menhara_productivity_txt = {
 		"- Feedback of app uses a state system to show how happy or sad the character is based on the results of moving window predictions.",
 };
 
+// Discord File Manager
 const discord_file_manager_txt = {
 	name: "discord_file_manager.txt",
 	content:
