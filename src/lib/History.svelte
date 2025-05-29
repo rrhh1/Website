@@ -1,6 +1,6 @@
 <script lang="ts">
 	import {tick} from "svelte";
-	import {chatHistory} from "../assets/dynamic";
+	import {chatHistory} from "../sharedStates/stores.svelte";
 
 	let history: Record<string, string>[] = $state([]);
 	chatHistory.subscribe((messages) => {

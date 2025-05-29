@@ -1,4 +1,4 @@
-import {chatHistory} from "../../assets/dynamic";
+import {chatHistory} from "../../sharedStates/stores.svelte";
 import {introState} from "../../sharedStates/intro.svelte";
 import {handleCatCommand} from "./cat_controller";
 import {handleCdCommand} from "./cd_controller";

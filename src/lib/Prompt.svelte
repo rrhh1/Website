@@ -1,5 +1,5 @@
 <script lang="ts">
-	import {directory} from "../assets/dynamic";
+	import {directory} from "../sharedStates/stores.svelte";
 	import {handleCommand} from "../controllers/prompt_controllers/master_controller";
 	import {loadState} from "../sharedStates/loading.svelte";
 

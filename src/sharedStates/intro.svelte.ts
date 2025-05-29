@@ -1,4 +1,4 @@
-import {description, TitleName} from "../assets/intro_strings";
+import {description, TitleName} from "../assets/constants/intro_strings";
 import {loadState} from "./loading.svelte";
 
 let displayedTitle: string = $state("");
