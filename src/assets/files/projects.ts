@@ -1,3 +1,28 @@
+// Catch Prediction Robot
+const catch_prediction_robot_txt = {
+	name: "catch_prediction_robot.txt",
+	content:
+		"Project:   Computer Vision Catch Prediction Robot" +
+		"\n" +
+		"Time:      March 2025 - May 2025" +
+		"\n" +
+		"Link:      https://github.com/rrhh1/CSE598-ARL-Project" +
+		"\n\n" +
+		"Description:" +
+		"\n" +
+		"- Robotic Learning class project to create an automatic catcher using a belt driven actuator and a webcam parallel to the axis of motion." +
+		"\n" +
+		"- Utilized OpenCV to track a ball in motion as data for predicting landing zones using a neural network." +
+		"\n" +
+		"- Used Pytorch to create, train, and test several models including MLPs, RNNs, and a modified ResNet-18." +
+		"\n" +
+		"- Constructed a data collection environment using two webcams to efficiently collect data by logging ball positions and landing zones in parallel." +
+		"\n" +
+		"- Achieved sub-second total time of data collection and prediction during inference to maximize actuator movement time." +
+		"\n" +
+		"- Attached a micro-stepper component to the actuator’s stepper motor to allow for more precise and accurate motion, giving the user more control in its movement.",
+};
+
 // Natural Selection Cellular Automata
 const cellular_automata_txt = {
 	name: "cellular_automata.txt",
@@ -100,7 +125,7 @@ const menhara_productivity_txt = {
 		"\n" +
 		"- Project developed during Arizona State University's 2025 InnovationHacks Hackathon where project won 'Google Developer Student Club: Best Productivity Tools' award." +
 		"\n" +
-		"- Created an app using Tauri, SvelteKit, and PyTorch (Rust, Typescript, Python) to detech whether a user is distracted or not based on their desktop." +
+		"- Created an app using Tauri, SvelteKit, and PyTorch (Rust, Typescript, Python) to detect whether a user is distracted or not based on their desktop." +
 		"\n" +
 		"- Fine-tuned a ResNet-18 model using a custom dataset to predict whether a desktop is 'on task' or 'distracted'." +
 		"\n" +
@@ -133,6 +158,7 @@ const discord_file_manager_txt = {
 };
 
 export const project_files = [
+	catch_prediction_robot_txt,
 	cellular_automata_txt,
 	custom_gpt_txt,
 	discord_clip_txt,
