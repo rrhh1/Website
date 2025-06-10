@@ -33,9 +33,7 @@ const contacts_txt = {
 		"\n" +
 		"💻 GitHub:	github.com/rrhh1" +
 		"\n" +
-		"💼 LinkedIn:	linkedin.com/in/ray-h-hu/" +
-		"\n" +
-		"☎️ Phone:	+1 (510) 396-1677",
+		"💼 LinkedIn:	linkedin.com/in/ray-h-hu/",
 };
 
 // Export the root files
