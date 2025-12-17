@@ -23,7 +23,7 @@ const masters_txt = {
 		"\n" +
 		"Attendance:    August 2024 - December 2025" +
 		"\n" +
-		"Thesis:	   	Sparse Physics-Informed Modelling for the Gray-Scott Equation" +
+		"Thesis:		Sparse Physics-Informed Modelling for the Gray-Scott Equation" +
 		"\n" +
 		"Advisor:       Prof. Kookjin Lee",
 };
