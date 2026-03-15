@@ -5,9 +5,9 @@ const about_txt = {
 		"This is a short summary of my website." +
 		"\n\n" +
 		"👋 Hello and thank you again for visiting my website! " +
-		"My name is Ray and I am a current Master's student at Arizona State University studying Computer Science. " +
-		"I have a passion for machine learning and software development, focusing on optimization to build efficient solutions. " +
-		"My current academic interests as of now are in the fields of sparse neural networks and autonmous systems learning techniques. " +
+		"My name is Ray and I am a upcoming PhD student at Santa Clara University studying Computer Science with a interdisciplinary focus in high performance computing and machine learning. " +
+		"I have a passion for efficient computing and software development, focusing on optimization to build better solutions. " +
+		"My current academic interests as of now are in the fields of sparse neural networks and learning techniques for autonomous systems. " +
 		"Outside of school, I enjoy playing video games, making and drinking coffee, and listening to music. If you have a good album or cafe recommendation, please let me know! " +
 		"Feel free to explore the various sections of my portfolio to learn more about my skills, education, and projects! :)",
 };
